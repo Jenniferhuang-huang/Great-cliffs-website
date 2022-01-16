@@ -237,3 +237,25 @@ input[type="submit"] {
   background: no-repeat lightgrey url(images/forest_cliff.jpg);
   background-size: 1500px;
 }
+#cliffs main{
+    margin: 10px 50px;
+}
+.westcliffs, .northcliifs, .eastcliifs, .southcliifs{
+    width: 400px;
+    background-color: rgb(131, 12, 12);
+    color:#fff;
+    text-align: center;
+    margin: 40px 40px 50px 0px;
+    font-size: 15px;
+    font-weight: bold;
+    height: 35px;
+    padding-top: 15px;
+    display: inline-block;
+}
+.westcliffs, .eastcliifs {
+    margin-left: 160px;
+}
+.westcliffs img, .northcliifs img, .eastcliifs img, .southcliifs img{
+    width: 400px;
+    padding-top: 10px;
+}
