@@ -53,7 +53,7 @@ header {
 main {
   padding: 50px 50px;
 }
-h2 {
+h1, h2 {
   font: Arial, Helvetica, sans-serif;
   color: #9ed034;
   padding-bottom: 10px;
@@ -79,6 +79,7 @@ section #partners .partner {
 section #partners .partner img {
   width: 90px;
   height: 90px;
+/* footer */
 }
 footer {
   width: 100%;
@@ -132,8 +133,96 @@ footer #nondisclaimer .social .fa-instagram {
   background: no-repeat lightgrey url(images/runfly.jpg);
   background-size: 1500px;
 }
+table {
+    width: 1000px;
+    margin: 4em auto 0 auto;
+}
+caption {
+    background: #852B1B;
+    height: 40px;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-top: 1em;
+}
+thead {
+    background: #BDE1FF;
+}
+tbody {
+    background: #EEFFE6;
+    text-align: center;
+}
+th, td {
+    width: 225px;
+    height: 75px;
+    vertical-align :middle;
+    border: solid 1px #852B1B;
+}
+th:first-child {
+    width: 125px;
+    height: 50px;
+    background:  #4977D1;
+    color: #fff;
+}
+td:first-child {
+    font-weight: bold;
+    background: #BDE1FF;
+}
 /* contact page */
 #contact header {
   background: no-repeat lightgrey url(images/cliff_rock.jpg);
   background-size: 1500px;
+}
+.phone, .email {
+    padding-bottom: 15px;
+}
+span:first-child {
+    font-weight: bold;
+}
+fieldset {
+    border: solid 3px #9ed034;
+}
+legend {
+    font-size: 2em;
+    color: #4977D1;
+}
+label {
+    font-weight: bold;
+}
+.textbox label{
+    display: block;
+    margin: 15px 0 0 0;
+}
+.radios, .selectmenu, .commentbox, .button, .textbox{   
+    margin: 20px;
+}
+.selectmenu select{
+    width: 200px;
+    text-align: center;
+}
+input {
+    width: 500px;
+}
+textarea{
+    display: block;
+    height: 200px;
+    width: 500px;
+}
+input[type="radio"] { /* attribute selector */
+    width: 25px;
+}
+input[type="submit"] {
+    margin: 10px 0 10px 370px;
+    width: 130px;
+    height: 50px;
+    background-color: #4977D1;
+    font-size: 1.1em; 
+    font-weight: bold;
+    color: #fff;
+    
+    
+}
+.contactinfo {
+    padding-top: 10px;
+    padding-bottom: 5px;;
 }
