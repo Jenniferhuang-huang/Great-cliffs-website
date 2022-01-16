@@ -127,3 +127,13 @@ footer #nondisclaimer .social .fa-instagram {
   background: #125688;
   color: white;
 }
+/* activities page */
+#activities header {
+  background: no-repeat lightgrey url(images/runfly.jpg);
+  background-size: 1500px;
+}
+/* contact page */
+#contact header {
+  background: no-repeat lightgrey url(images/cliff_rock.jpg);
+  background-size: 1500px;
+}
