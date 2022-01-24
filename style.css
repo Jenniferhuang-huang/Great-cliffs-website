@@ -49,6 +49,13 @@ header {
 .main-menu ul li.active a {
   color: #fff;
 }
+#timeofday {
+  color: #3a3a3a, #125688;
+  font: Arial, Helvetica, sans-serif;
+  padding-left: 550px;
+  background: rgb(2,0,36);
+  background: linear-gradient(0deg, rgba(251,215,139,1) 0%, rgba(118,213,245,1) 100%);
+}
 /* Main */
 main {
   padding: 50px 50px;
@@ -216,7 +223,7 @@ textarea {
   width: 500px;
 }
 input[type="radio"] {
-  /* attribute selector */
+/* attribute selector */
   width: 25px;
 }
 input[type="submit"] {
