@@ -239,7 +239,17 @@ input[type="submit"] {
   padding-top: 10px;
   padding-bottom: 5px;
 }
-
+#field {
+  margin-left: 20px;
+  width: 200px;
+  font-size: 20px;
+  background-color:khaki;
+}
+#codes{
+  font-size: 20px;
+  background-color:dodgerblue;
+  display: inline-block;
+}
 /* Cliffs page */
 #cliffs header {
   background: no-repeat lightgrey url(images/forest_cliff.jpg);
