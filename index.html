@@ -121,84 +121,9 @@
         </div>
       </footer>
     </div>
-    <!--JavaScript Codes-->
-    <script>
-      //Create a time data function
-      function currentTime() {
-        //Declare variables
-        var d = new Date();
-        var hr = d.getHours();
-        var min = d.getMinutes();
-        var sec = d.getSeconds();
-        var ampm;
-
-        if (sec < 10) {
-          sec = "0" + sec;
-        }
-        if (min < 10) {
-          min = "0" + min;
-        }
-
-        var utchr = d.getUTCHours();
-        var timeDiff;
-        var adjTimeDiff;
-        var timeZone;
-
-        timeDiff = utchr - hr;
-        if (timeDiff >= 0) {
-          adjTimeDiff = timeDiff;
-        } else {
-          adjTimeDiff = timeDiff + 24;
-        }
-
-        if (adjTimeDiff == 8) {
-          timeZone = "PST";
-        } else if (adjTimeDiff == 6) {
-          timeZone = "CST";
-        } else if (adjTimeDiff == 5) {
-          timeZone = "EST";
-        } else if (adjTimeDiff == 7) {
-          timeZone = "MST";
-        }
-
-        if (hr == 12) {
-          ampm = "PM";
-        } else if (hr > 12) {
-          hr -= 12;
-          ampm = "PM";
-        } else {
-          ampm = "AM";
-        }
-
-        var time = hr + ":" + min + ":" + sec + " " + ampm + " " + timeZone;
-        document.getElementById("clock").innerText = time;
-      }
-      setInterval(currentTime, 1000);
-
-  
-      var photos = [];
-      var fileNames = [];
-      var imageList = [];
-      var image;
-      var openList = "<li class = 'partner'>";
-      var closeList = "</li>";
-
-      //Create a loop to create 6 images starting with index of 0
-      for (var i = 0; i < 6; i++) {
-        fileNames.push("partner-pic" + (i + 1));
-        photos.push(
-          "<img src = 'images/partners/" +
-            fileNames[i] +
-            ".png' alt = 'partner picture " +
-            (i + 1) +
-            "'>"
-        ); //assemble full image elements
-        image = openList + photos[i] + closeList;
-        imageList.push(image);
-      }
-      //Display all six images from the array in the album
-      document.getElementById("partners").innerHTML = imageList.join(" ");
-
-    </script>
+    <!-- Digital Clock-->
+    <script src="js/digclock.js"></script>
+    <!-- Partners -->
+    <script src="js/site_scripts.js"></script>
   </body>
 </html>
