@@ -27,10 +27,10 @@ function disableButton(btnvalue){
           "rgba(225, 225,225, 1)";
     }
 } 
-var codebox = document.getElementById("codeentered");
+var codebox = document.getElementById("field");
 codebox.addEventListener("input", evaluateCode);
 function evaluateCode(){
-    getCode = document.getElementById("codeentered").value;
+    getCode = document.getElementById("field").value;
     var charset1 = getCode.trim();
     var charset2 = code.trim();
     if (charset1.length == charset2.length && charset1 == charset2){
