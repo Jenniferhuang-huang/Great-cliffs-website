@@ -1,10 +1,12 @@
 //Function to generate combination of characters
-function generateCode(){
-    //Creat variables to store generated codes and the type of the charaters we want to show as codes
-    var code = ' '; //initialize to null value
-    var fetCode = ' ';
+ var code = ' '; //initialize to null value
+    var getCode = ' ';
     var btnvalue;
-    var str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$'
+    var str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$';
+    
+    function generateCode(){
+    //Creat variables to store generated codes and the type of the charaters we want to show as codes
+   
     for (i=1; i <= 8; i++){
         var char = Math.random()*str.length;
         code += str.charAt(char);
@@ -25,5 +27,14 @@ function disableButton(btnvalue){
           "rgba(225, 225,225, 1)";
     }
 } 
-
+var codebox = document.getElementById("codeentered");
+codebox.addEventListener("input", evaluateCode);
+function evaluateCode(){
+    getCode = document.getElementById("codeentered").value;
+    var charset1 = getCode.trim();
+    var charset2 = code.trim();
+    if (charset1.length == charset2.length && charset1 == charset2){
+        disableButton(false);
+    }
+}
 disableButton();
