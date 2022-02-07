@@ -177,7 +177,10 @@ td:first-child {
   font-weight: bold;
   background: #bde1ff;
 }
-
+.highlight {
+  background: #628a0c;
+  color: white;
+}
 /* contact page */
 #contact header {
   background: no-repeat lightgrey url(images/cliff_rock.jpg);
