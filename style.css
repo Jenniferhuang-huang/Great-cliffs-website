@@ -1,11 +1,11 @@
 header {
   width: 100%;
-  min-height: 400px;
+  min-height: 275px;
   padding-top: 3em;
 }
-#home header {
-  background: no-repeat lightgrey url(images/cliff_ocean.jpg);
-  background-size: 1500px;
+#home {
+  background: no-repeat white url(images/cliff_ocean.jpg);
+  background-size: 100% 400px;
 }
 .main-header {
   background-color: rgb(255, 255, 255, 0.8);
@@ -21,6 +21,13 @@ header {
   float: left;
 }
 /* Navigation */
+.navbar {
+    margin-left: 225px;
+    font-weight: 400;  
+    height: 100px;
+   color: rgb(255, 255, 255);
+     background-color: rgba(38, 41, 61, 0.7);
+}
 .main-menu {
   margin-left: 200px;
   font-weight: 400;
@@ -31,13 +38,13 @@ header {
   padding-left: 25px;
   padding-right: 25px;
   border-left: 1px solid rgba(202, 204, 202, 0.6);
-  line-height: 100px;
+  line-height: 80px;
   text-transform: uppercase;
   font-size: 14px;
 }
 .main-menu ul li a {
-  text-decoration: none;
-  color: #888;
+    text-decoration: none;
+    color: black;
 }
 .main-menu ul li a:hover {
   color: #9ed034;
@@ -59,6 +66,7 @@ header {
 /* Main */
 main {
   padding: 50px 50px;
+
 }
 h1,
 h2 {
@@ -68,11 +76,11 @@ h2 {
 }
 /* Partners */
 section {
-  width: 100%;
+  /*width: 100%;*/
   background: #4288c3;
 }
 section #partners {
-  width: 1200px;
+  /*width: 1200px;*/
   padding: 2em 0 2em 0;
   margin: 0 auto;
   text-align: center;
@@ -137,9 +145,11 @@ footer #nondisclaimer .social .fa-instagram {
   color: white;
 }
 /* activities page */
-#activities header {
-  background: no-repeat lightgrey url(images/runfly.jpg);
-  background-size: 1500px;
+#activities{
+  /*background: no-repeat lightgrey url(images/runfly.jpg);
+  background-size: 1500px;*/
+    background: no-repeat white url(images/runfly.jpg);
+  background-size: 100% 400px;
 }
 table {
   width: 1000px;
@@ -205,9 +215,11 @@ td:first-child {
   width:200px;
 }
 /* contact page */
-#contact header {
-  background: no-repeat lightgrey url(images/cliff_rock.jpg);
-  background-size: 1500px;
+#contact {
+  /*background: no-repeat lightgrey url(images/cliff_rock.jpg);
+  background-size: 1500px;*/
+  background: no-repeat white url(images/cliff_rock.jpg);
+  background-size: 100% 400px;
 }
 .phone,
 .email {
@@ -278,23 +290,26 @@ input[type="submit"] {
   display: inline-block;
 }
 /* Cliffs page */
-#cliffs header {
-  background: no-repeat lightgrey url(images/forest_cliff.jpg);
-  background-size: 1500px;
+#cliffs {
+ /* background: no-repeat #d3d3d3 url(images/forest_cliff.jpg);
+  background-size: 1500px;*/
+  background: no-repeat white url(images/forest_cliff.jpg);
+  background-size: 100% 400px;
 }
 #cliffs main{
-    margin: 10px 50px;
+    margin: 0 50px;
+    padding-bottom: 200px;
 }
 .westcliffs, .northcliifs, .eastcliifs, .southcliifs{
     width: 400px;
     background-color: rgb(131, 12, 12);
     color:#fff;
     text-align: center;
-    margin: 40px 40px 50px 0px;
+    margin: 100px 40px 40px 5px;
     font-size: 15px;
     font-weight: bold;
     height: 35px;
-    padding-top: 15px;
+    padding-top: 10px;
     display: inline-block;
 }
 .westcliffs, .eastcliifs {
@@ -302,5 +317,48 @@ input[type="submit"] {
 }
 .westcliffs img, .northcliifs img, .eastcliifs img, .southcliifs img{
     width: 400px;
-    padding-top: 10px;
+    /*padding-top: 0;*/
 }
+@media (max-width: 768px) {
+    footer #nondisclaimer .copy {
+        padding: 3.5em 0em 3.5em 0em;
+        text-align: center;
+        float: none;
+        font-size: 0.9em;
+      }
+      footer #nondisclaimer .social {
+        padding: 2.5em 0;
+        margin: 0;
+        text-align: center;
+        float: none;
+      }
+}
+
+@media (max-width: 992px) {
+    .logo img {
+        position: relative;
+        bottom: 8px;
+    }
+    .main-menu {
+        width: 200px;
+        background-color:rgb(255, 255, 255);
+        position: relative;
+        right: 1.7em;
+        margin-right: 0;
+      }
+      .main-menu ul li {
+        border-bottom: 1px solid rgba(202, 204, 202, 0.6);
+      }
+      li.nav-item{
+        background-color: rgb(255, 255, 255);
+      }
+      main {
+        padding: 3em 1em 3em 1em;
+        margin: 0;
+      }
+      #home .main-col-content {
+        padding: 25px;
+        min-height: 450px;
+        margin-top: 1em;
+      }
+} 
