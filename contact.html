@@ -27,7 +27,7 @@
  
   <body id="contact" onLoad="disableButton(true)">
     <!-- Container to wrap everything -->
-    <div id="container">
+    <div id="container-fluid">
       <!-- Brand of Website -->
             <div class="main-header">
           <div class="logo">
@@ -111,9 +111,21 @@
           <fieldset>
             <legend>Contact Form</legend>
             <div class="textbox">
-              <label>Name:</label>
-              <input type="text" name="name" placeholder="John Doe" />
-              <label>Email:</label>
+              <!--<label>Name:</label>
+              <input type="text" name="name" placeholder="John Doe" />-->
+              <div class="form-group col-lg-6">
+                  <label for="name">Name:</label>
+                  <input type="text" class="form-control" id="name" placeholder="John Doe" name="name">
+                </div>
+              <div class="form-group col-lg-6">
+                  <label for="email">Email:</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                </div>
+              <div class="form-group col-lg-6">
+                  <label for="phone">Phone:</label>
+                  <input type="text" class="form-control" id="phone" placeholder="xxx-xxx-xxxx" name="phone">
+                </div>
+              <!--<label>Email:</label>
               <input
                 type="email"
                 name="email"
@@ -121,15 +133,16 @@
               />
               <label>Phone:</label>
               <input type="text" name="phone" placeholder="xxx-xxx-xxxx" />
+            </div>-->
+
+            <div class="form-check col-lg-6">
+              <label class="form-check-label" for="contact">How should we contact you?</label>
+              <input type="radio" class="form-check-input" name="contact" value="email" checked /> Email
+              <div></div>
+              <input type="radio" class="form-check-input" name="contact" value="phone" /> Phone
             </div>
 
-            <div class="radios">
-              <label>How should we contact you?</label>
-              <input type="radio" name="contact" value="email" checked />Email
-              <input type="radio" name="contact" value="phone" />Phone
-            </div>
-
-            <div class="selectmenu">
+            <!--<div class="selectmenu">
               <label>Which Cliff are you inquiring?</label>
               <select>
                 <option>West Cliff</option>
@@ -137,22 +150,39 @@
                 <option>East Cliff</option>
                 <option>South Cliff</option>
               </select>
-            </div>
+            </div>-->
 
-            <div class="commentbox">
+            <div class="form-group col-lg-6">
+                <label for="cliff-inquire">Which Cliff are you inquiring?</label>
+                <select class="form-control" id="cliff-inquire">
+                  <option>West Cliff</option>
+                  <option>North Cliff</option>
+                  <option>East Cliff</option>
+                  <option>South Cliff</option>
+                </select>
+            </div> 
+
+            <!--<div class="commentbox">
               <label>How did you hear about us:</label>
               <textarea></textarea>
+            </div>-->
+
+            <div class="form-group col-lg-6">
+              <label for="text">How did you hear about us:</label>
+               <textarea class="form-control" id="exampleFormControlTextarea2" rows="6"></textarea>
             </div>
 
+
             <!-- Random Codes-->
+        
             <div id="randomcode">
-              <input id="field" type="text" name="randomcode" placeholder="Enter characters">
-              <p id="codes"></p>
+              <p id="codes" ></p><input id="field" type="text" name="randomcode" placeholder="Enter characters">
             </div>
+            <div class="form-group col-lg-6">
             <div class="button">
-            <button id="submit" type="submit" class="btn btn-primary"><span class="fa fa-paper-plane"></span> Send</button>
+            <button id="submit" class="form-control" type="submit" class="btn btn-primary"><span class="fa fa-paper-plane"></span> Send</button>
               <!--<input id="submit" type="submit" value="Inquire" />-->
-            </div>
+            </div></div>
           </fieldset>
         </form>
 
