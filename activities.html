@@ -95,6 +95,7 @@
           contact them directly. For a list of activities, please refer to the
           table below:
         </p>
+        <div class="table-responsive">
         <table>
           <caption>
             Activities at the Cliffs
@@ -145,14 +146,33 @@
               <td>Sunset Camping</td>
             </tr>
           </tbody>
-        </table>
-        <div id="displaySelected">
-          <div id="result">
-            <h4>My selected activities to enquire:</h4>
-          </div>
-          <div id="sendinfo">
-            <input type="email" placeholder="johndoe@gmail.com">
-            <button>Get Info</button>
+        </table></div>
+
+        <div id="displaySelected" data-toggle="modal" data-target="#result">
+          <div id="result" class="modal">
+            <div class="modal-dialog">
+            <div class="modal-content">           
+
+            <div class="modal-header">
+              <h4 class="modal-title">My selected activities to enquire:</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <div class="modal-body">
+              <div id="result"></div>
+            </div>
+            
+            <div class="modal-footer">
+                        <!--<p style="margin-right:300px;">Close</p>-->
+              <button type="button" class="btn btn-success" data-dismiss="modal">Back to Activites</button>
+                    
+              <div id="sendinfo">
+              <!--<input type="email" placeholder="johndoe@gmail.com">-->
+                <button type="button" class="btn btn-primary">Get Info</button>
+             </div>
+            </div>
+            </div>
+            </div>
           </div>
         </div>
 
