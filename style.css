@@ -147,8 +147,6 @@ footer #nondisclaimer .social .fa-instagram {
 }
 /* activities page */
 #activities{
-  /*background: no-repeat lightgrey url(images/runfly.jpg);
-  background-size: 1500px;*/
     background: no-repeat white url(images/runfly.jpg);
   background-size: 100% 400px;
 }
